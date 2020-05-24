@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">QuestionTestApp</string>
+    <string name="correct_answer">Correct Answer: </string>
+    <!-- SharedPreferences -->
+    <string name="sharedPreferencesName">MySharedPreferences</string>
+    <!-- Booleans -->
+    <string name="logged">isLogged</string>
+
+    <!-- Strings -->
+    <string name="email">emailKey</string>
+
+    <!-- Login Activity -->
+    <string name="txvLogin">Login</string>
+    <string name="edtEmail">Email</string>
+    <string name="edtSenha">Password</string>
+    <string name="txvRegister">Dont have an account? <b><u> Sign up!</u></b></string>
+    <string name="btnLogin">Login</string>
+    <string name="sucessLogin">Login success</string>
+    <string name="failedLogin">Login fail</string>
+
+    <!-- Register Activity -->
+    <string name="txvRegister_activity">SignUp</string>
+    <string name="btnRegister">SignUp</string>
+    <string name="toastRegister">Please enter the password of length 5 </string>
+    <string name="notValidEmail">Email is not Valid</string>
+
+    <string name="sucessRegister">SignUp Success</string>
+</resources>

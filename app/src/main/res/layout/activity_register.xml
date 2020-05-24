@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+ >
+
+    <TextView
+        android:id="@+id/txvCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/txvRegister_activity"
+        android:textColor="@color/myWhite"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="50dp" />
+
+    <EditText
+        android:id="@+id/edtEmailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:hint="@string/edtEmail"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/myWhite"
+        android:textColorHint="@color/myWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txvCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/txvCadastro"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="48dp" />
+
+    <EditText
+        android:id="@+id/edtPasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:textColorHint="@color/myWhite"
+        android:textColor="@color/myWhite"
+        android:hint="@string/edtSenha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edtEmailRegister"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmailRegister"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_button"
+        android:text="@string/btnRegister"
+        android:onClick="doRegister"
+        app:layout_constraintEnd_toEndOf="@+id/edtPasswordRegister"
+        app:layout_constraintStart_toStartOf="@+id/edtPasswordRegister"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordRegister" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
