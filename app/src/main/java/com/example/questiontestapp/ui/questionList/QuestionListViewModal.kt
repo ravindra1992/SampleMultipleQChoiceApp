@@ -33,9 +33,9 @@ class QuestionListViewModal(
             if (alldata
                     .isNotEmpty() && alldata[0] == 0
             ) {
-                Intent(context, QuestionAndAnswerList::class.java).also {
-                    context.startActivity(it)
-                }
+                val intent = Intent(context, QuestionAndAnswerList::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                context.startActivity(intent)
             } else {
                 Toast.makeText(context, "Please complete questions", Toast.LENGTH_LONG).show()
             }
